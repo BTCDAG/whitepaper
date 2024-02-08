@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js"></script>
+    <title>BTCDAG Whitepaper</title>
+    <style>
+        @media print {
+            .page-break-after {
+                page-break-after: always;
+            }
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .header,
+        .footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header img {
+            width: 200px;
+        }
+
+        .content {
+            padding: 20px 0;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+
+        .info {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .info p {
+            margin: 10px 0;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .info p span {
+            font-weight: bold;
+        }
+
+        #halvingChart {
+            border: 1px solid #ddd;
+            padding: 10px;
+            height: 200px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.png" alt="BTCDAG Logo">
+        <h2 style="color: white;font-size: 30px;">BTCDAG</h2>
+        <p>A Novel Bitcoin Implementation Using DAG and SHA-3 Quantum-resistant Algorithm</p>
+    </div>
+
+    <div class="container">
+        <div class="content">
+
+
+            <!-- Project Introduction -->
+            <h2>Project Introduction</h2>
+            <p>BTCDAG represents a groundbreaking approach in the cryptocurrency sphere, harnessing the power of
+                Directed Acyclic Graph (DAG) technology to redefine transaction processing and network structure. This
+                innovation sets a new benchmark for speed, scalability, and security in digital transactions.</p>
+            <p>The adoption of DAG in BTCDAG eliminates the limitations of conventional blockchain architecture,
+                offering instantaneous transaction confirmation, increased network capacity, and a significant reduction
+                in the probability of network congestion.</p>
+
+            <!-- Technical Details -->
+            <h2>Technical Details</h2>
+            <p>BTCDAG employs the SHA-3 algorithm, a member of the Keccak family, ensuring unparalleled resistance
+                against quantum attacks. This cryptographic strength fortifies BTCDAG's network, safeguarding it against
+                vulnerabilities and positioning it at the forefront of quantum-resistant technologies.</p>
+            <p>The architecture of BTCDAG is meticulously designed to optimize data processing and storage. With a focus
+                on decentralization, efficiency, and security, the network structure facilitates a seamless and robust
+                transactional environment.</p>
+
+            <div class="page-break-after"></div>
+            <!-- DAG Technology Explained -->
+            <h2>DAG Technology Explained</h2>
+            <p>Directed Acyclic Graph (DAG) is a novel technology that redefines the structural framework of blockchain
+                networks. Unlike traditional blockchain, which organizes transactions in a linear sequence of blocks,
+                DAG allows for a network of transactions that is not strictly sequential. This unique structure brings
+                several transformative advantages:</p>
+            <ul>
+                <li><b>Scalability:</b> DAG structures can process a high volume of transactions concurrently,
+                    significantly increasing the network's throughput.</li>
+                <li><b>Speed:</b> The DAG network confirms transactions in parallel, which drastically reduces
+                    confirmation times, making it an ideal framework for instant transactions.</li>
+                <li><b>Reduced Transaction Fees:</b> Due to the efficient structure of DAG, the cost associated with
+                    transaction processing is lower compared to traditional blockchain networks.</li>
+            </ul>
+            <p>BTCDAG leverages the DAG technology to overcome the limitations of conventional blockchain, such as
+                scalability issues and high transaction fees. By adopting DAG, BTCDAG is not only enhancing the
+                efficiency and speed of transaction processing but also paving the way for a more inclusive and
+                sustainable blockchain ecosystem.</p>
+
+            <!-- SHA-3 Algorithm Explained -->
+            <h2>SHA-3 Algorithm Explained</h2>
+            <p>The SHA-3 (Secure Hash Algorithm 3) is part of the cryptographic hash function family, a successor to
+                SHA-1 and SHA-2. It is unique in its use of the Keccak algorithm, which provides a robust defense
+                against cryptographic attacks, including those utilizing quantum computing. Unlike its predecessors,
+                SHA-3 operates on a sponge construction which allows it to absorb data in blocks, process it, and then
+                squeeze out the hash. This makes it not only secure but also versatile in handling various data lengths,
+                thereby offering an optimal solution for cryptographic operations in BTCDAG.</p>
+
+            <div class="page-break-after"></div>
+
+            <!-- Economic Model -->
+            <h2>Economic Model</h2>
+            <p>The total supply cap of 21,000,000 BTCDAG coins is a strategic decision, mirroring the scarcity principle
+                of traditional Bitcoin and reinforcing its value proposition.</p>
+            <p>With a block time of just 1 second, BTCDAG revolutionizes transaction processing, ensuring immediate
+                confirmation and a user experience unmatched in the cryptocurrency domain.</p>
+            <p>The halving mechanism, occurring every 126,230,400 blocks, plays a pivotal role in BTCDAG's economic
+                model, strategically balancing supply and demand, and incrementally enhancing the coin's scarcity and
+                inherent value.</p>
+
+            <!-- Algorithm and Supply Details -->
+            <h2>Algorithm and Supply Details</h2>
+            <p>BTCDAG's unique implementation of the SHA-3 algorithm ensures a highly secure and quantum-resistant
+                environment. This advanced cryptographic approach not only secures individual transactions but also
+                fortifies the overall network integrity.</p>
+            <p>The coin's issuance follows a meticulously designed schedule, with block rewards starting at 0.08333
+                BTCDAG.
+                These rewards halve every 126,230,400 blocks, ensuring a controlled and diminishing issuance that
+                mimics the scarcity and deflationary aspects of precious resources.</p>
+            <p>The maximum supply of 21,000,000 BTCDAG is a deliberate choice to introduce scarcity, driving value and
+                ensuring that the currency remains a sought-after asset in the digital age.</p>
+
+            <div class="page-break-after"></div>
+            <!-- Halving Chart -->
+            <h2>Halving Chart</h2>
+
+            <div class="HalvingChartFlex">
+                <div class="info">
+                    <p><span>Total Supply:</span> 21,000,000 BTCDAG</p>
+                    <p><span>Halving Interval:</span> Every 126,230,400 blocks</p>
+                    <p><span>Block Time:</span> 1 second</p>
+                    <p><span>Initial Block Reward:</span> 0.08333 BTCDAG</p>
+                </div>
+
+                <!-- Insert chart here. Use a chart library like Chart.js or similar -->
+                <div id="halvingChart">Chart will be rendered here.</div>
+            </div>
+
+            <!-- Project Advantages -->
+            <h2>Project Advantages</h2>
+            <p>BTCDAG sets itself apart with its cutting-edge DAG architecture and quantum-resistant SHA-3 algorithm,
+                ensuring unmatched transaction speed, enhanced security, and a forward-thinking approach to digital
+                currency.</p>
+            <p>The fusion of DAG and SHA-3 translates into a secure, efficient, and highly responsive network, marking a
+                new era in the realm of cryptocurrencies where speed does not compromise security.</p>
+
+
+
+            <div class="page-break-after"></div>
+
+            <!-- Kaspa Technology Lessons -->
+            <h2>Kaspa Technology: Lessons, Insights, and Economic Stability</h2>
+            <p>As we venture into the realm of blockchain innovation, the pioneering work of Kaspa technology offers
+                invaluable insights and lessons. Known for its groundbreaking approach to scalability and transaction
+                speed, Kaspa's DAG-based protocol marks a significant leap forward in the blockchain domain.</p>
+            <p>From Kaspa, we have gleaned critical insights:</p>
+            <ul>
+                <li><b>Scalability:</b> Kaspa's novel DAG structure demonstrates how scalability can be significantly
+                    enhanced without compromising on security or decentralization. This approach is instrumental in
+                    handling a high volume of transactions and maintaining a swift network.</li>
+                <li><b>Speed and Efficiency:</b> The emphasis on speed and efficiency is paramount. Kaspa's architecture
+                    ensures rapid transaction confirmations, setting a new standard for performance in blockchain
+                    networks.</li>
+                <li><b>Decentralization and Security:</b> While pursuing scalability and speed, Kaspa maintains a strong
+                    commitment to decentralization and security. These principles are foundational to our approach in
+                    BTCDAG, ensuring that our network remains robust and trustless.</li>
+            </ul>
+            <p>Building upon these principles, BTCDAG is not merely replicating Kaspa's technology but is innovating
+                further. We are tailoring these insights to fit our unique architecture, ensuring that BTCDAG stands at
+                the forefront of the next wave of blockchain evolution.</p>
+            <p>In addition to technological innovation, BTCDAG has adopted a stable and reliable economic model. Our
+                commitment to economic stability is reflected in the meticulous design of our tokenomics, which aligns
+                with the proven scarcity principles of Bitcoin. The BTCDAG token is engineered to foster trust and
+                longevity, ensuring a predictable and secure investment landscape.</p>
+            <p>Moreover, our economic model has undergone rigorous scrutiny and has been certified by leading experts in
+                the cryptocurrency domain. This certification is a testament to our dedication to maintaining the
+                highest standards of integrity and reliability, mirroring the trusted framework established by Bitcoin
+                itself.</p>
+            <p>With BTCDAG, we are not just creating a cryptocurrency; we are setting a new benchmark for stability,
+                security, and trust in the digital economy.</p>
+
+
+            <!-- BTCDAG: A Technical Deep Dive -->
+            <h2>BTCDAG: A Technical Deep Dive</h2>
+            <p>At the heart of BTCDAG lies a commitment to technological excellence, driven by a deep understanding of
+                blockchain's potential and its challenges. Our innovative approach redefines the landscape of digital
+                currencies, making transactions faster, more secure, and universally accessible. Here, we dive deep into
+                the core technical aspects of BTCDAG, showcasing our unique solutions and the advanced technologies that
+                power our network.</p>
+
+            <h3>Directed Acyclic Graph (DAG): The Backbone of BTCDAG</h3>
+            <p>The Directed Acyclic Graph (DAG) structure stands as the cornerstone of BTCDAG. Unlike traditional
+                blockchain technologies that rely on a linear, sequential chain of blocks, our DAG structure allows for
+                multiple chains of blocks to coexist and interlink. This innovative design addresses the inherent
+                limitations of conventional blockchains, including scalability issues and slow transaction times.</p>
+            <p>In BTCDAG's DAG framework, each new transaction confirms one or more previous transactions, creating a
+                web of interconnected data that is not only robust against tampering but also capable of handling a
+                higher volume of transactions simultaneously. This interconnectedness ensures that as the network grows,
+                its capacity to process transactions increases, paving the way for truly scalable digital transactions.
+            </p>
+
+            <h3>SHA-3 Algorithm: Ensuring Quantum-resistant Security</h3>
+            <p>Security is paramount in the digital world, and at BTCDAG, it is our top priority. We employ the SHA-3
+                algorithm, renowned for its quantum-resistant properties. This cutting-edge cryptographic technology
+                provides a shield against the most sophisticated attacks, including threats from quantum computing.</p>
+            <p>SHA-3's unique sponge construction absorbs data, processes it, and then squeezes out the hash. This
+                flexibility allows it to handle data of any size, making it an ideal choice for securing transactions in
+                BTCDAG's diverse ecosystem. By integrating SHA-3, we ensure that every transaction on our network is not
+                just fast and efficient but also wrapped in a layer of unparalleled security.</p>
+
+            <div class="page-break-after"></div>
+
+            <h3>Network Structure: Decentralization and Efficiency</h3>
+            <p>Decentralization lies at the core of BTCDAG's philosophy. Our network structure is designed to eliminate
+                any single point of failure, ensuring that the system is robust, transparent, and resistant to
+                censorship. The decentralized nature of BTCDAG fosters trust among users, as no single entity has
+                control over the entire network.</p>
+            <p>Efficiency is another hallmark of BTCDAG. With our DAG structure, transaction confirmations are
+                parallelized, significantly reducing the time required to confirm a transaction. This efficiency is not
+                just about speed; it's about ensuring that the network remains scalable and capable of handling the
+                ever-increasing demand for digital transactions.</p>
+
+            <h3>Tokenomics: A Model of Stability and Growth</h3>
+            <p>The economic model of BTCDAG is carefully designed to ensure stability and promote growth. Our tokenomics
+                reflect a deep understanding of market dynamics and the need for a sustainable digital economy. The
+                total supply of BTCDAG coins is capped, mirroring the scarcity principle of traditional Bitcoin and
+                reinforcing its value proposition.</p>
+            <p>Our halving mechanism, inspired by Bitcoin's proven model, ensures a controlled and diminishing issuance
+                of BTCDAG coins. This approach not only promotes scarcity but also encourages investment and growth. As
+                the supply decreases, the demand for BTCDAG is expected to rise, driving its value and ensuring the
+                long-term viability of the network.</p>
+
+            <div class="page-break-after"></div>
+
+            <h3>Community and Governance: Towards a Collaborative Future</h3>
+            <p>BTCDAG is more than just a technological innovation; it's a community-driven initiative. We believe that
+                the future of blockchain lies in collaboration and collective decision-making. Our governance model
+                encourages participation from all members of the BTCDAG community, ensuring that every voice is heard
+                and that the network evolves in a direction that reflects the collective will.</p>
+            <p>As we continue to build and enhance BTCDAG, we remain committed to our community. We regularly engage
+                with our users, developers, and stakeholders, gathering feedback and making iterative improvements. This
+                collaborative approach ensures that BTCDAG remains at the cutting edge of blockchain technology, driven
+                by the needs and aspirations of its users.</p>
+
+            <p>In conclusion, BTCDAG represents the next frontier in digital currency. Our advanced DAG structure,
+                coupled with quantum-resistant SHA-3 encryption and a robust network architecture, sets new standards
+                for speed, security, and scalability. Our economic model, grounded in principles of scarcity and
+                sustainability, promises a stable and prosperous future. As we continue on our journey, we invite
+                everyone to join us in shaping a new era of digital transactions, marked by innovation, security, and
+                community collaboration.</p>
+
+            <div class="page-break-after"></div>
+
+            <!-- Future Development -->
+            <h2>Future Development</h2>
+            <p>The roadmap of BTCDAG is a testament to its ambitious vision, encompassing a series of strategic
+                milestones aimed at network enhancement, community growth, and widespread adoption. The journey is
+                outlined as follows:</p>
+            <ul>
+                <li>
+                    <b>Q2 2024: Web Wallet Development</b>
+                    <p>
+                        Launch of the BTCDAG mainnet and wallet services. This phase marks the operational
+                        debut of BTCDAG, introducing a robust, user-friendly platform for secure transactions. Our
+                        wallet
+                        service is designed with state-of-the-art security features, ensuring the utmost safety for
+                        users'
+                        assets.
+                    </p>
+                </li>
+                <li>
+                    <b>Q3 2024: L2 Sidechain and Smart Contracts Development</b>
+                    <p>
+                        Implementation of Layer 2 (L2) sidechain solutions for improved scalability and performance.
+                        Simultaneously, smart contracts development will be initiated, marking BTCDAG's foray into
+                        decentralized applications and services.
+                    </p>
+                </li>
+                <li>
+                    <b>Q3 2024: Implementation of Over-Collateralized Staking</b>
+                    <p>
+                        Introduction of over-collateralized staking options, affording BTCDAG holders the opportunity to
+                        contribute to network security and earn rewards, fostering greater participation and securing
+                        the network.
+                    </p>
+                </li>
+                <li>
+                    <b>Q4 2024: Completion of Cross-Chain Bridging</b>
+                    <p>
+                        Achievement of full cross-chain interoperability, connecting BTCDAG with major blockchains like
+                        BNB and Ethereum. This milestone will facilitate direct exchanges between BTCDAG, BTC, ETH, and
+                        others, significantly enhancing liquidity and fostering a more interconnected blockchain
+                        ecosystem.
+                    </p>
+                </li>
+                <li>
+                    <b>Q1 2025: Launch of Engraving Transactions Marketplace and Periodic Token Burns</b>
+                    <p>
+                        Inauguration of the BTCDAG Engraving Transactions Marketplace, enabling users to engage in the
+                        creation and trade of engraved tokens. To augment token value and scarcity, periodic token burns
+                        will be executed, removing BTCDAG tokens from circulation systematically.
+                    </p>
+                </li>
+            </ul>
+            <p>Each milestone is designed with the community in mind, striving for innovation, security, and
+                user-centric development.</p>
+        </div>
+    </div>
+</body>
+
+
+</html>
+
+
+<script>
+    window.onload = function () {
+        var myChart = echarts.init(document.getElementById('halvingChart'));
+        let blockTime = 1;
+        let halvingInterval = 126230400;
+        let initialReward = 0.08333;
+        let halvings = 5;
+        let dates = [];
+        let rewards = [];
+        let reward = initialReward;
+        let lastYear = null;
+        for (let i = 0; i <= halvings; i++) {
+            let block = i * halvingInterval;
+            let currentDate = new Date('2024-04-02');
+            currentDate.setSeconds(currentDate.getSeconds() + block * blockTime);
+            let currentYear = currentDate.getFullYear();
+            if (lastYear !== currentYear) {
+                dates.push(currentYear.toString());
+                lastYear = currentYear;
+            }
+            rewards.push(reward);
+            reward /= 2;
+        }
+
+
+        var option = {
+            title: {
+                text: 'BTCDAG Halving Chart',
+                show: false
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            xAxis: {
+                type: 'category',
+                data: dates,
+                axisLabel: {
+                    formatter: function (value, index) {
+                        return value;
+                    }
+                }
+            },
+
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: rewards,
+                type: 'line',
+                smooth: true
+            }],
+            grid: {
+                left: '10',
+                right: '10',
+                bottom: '10',
+                top: '10',
+                containLabel: true
+            },
+
+        };
+
+        myChart.setOption(option);
+    }
+</script>
